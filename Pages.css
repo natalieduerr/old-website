@@ -1,3 +1,9 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700');
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:400,500');
+
 u{
  text-decoration: underline;
 }
@@ -96,14 +102,6 @@ a:hover{
  z-index:999;
 }
 
-/*.projectbox a{
-	color:rgb(210,35,42);
-}
-
-.projectbox a:hover{
-	color:#000;
-}*/
-
 .projectboximg{
  width:458px;
  height:208px;
@@ -128,7 +126,7 @@ a:hover{
 .projtitle{
  font-family:'Roboto Slab', serif;
  font-size: 16px;
- font-weight:700;
+ font-weight:400;
  background-color:#fff;
  text-align: center;
  padding:15px;
@@ -231,7 +229,6 @@ a:hover{
 }
 
 .me{
-/* padding-top: 100px;*/
  width:400px;
  height:450px;
  background-clip:content-box;
@@ -306,7 +303,7 @@ a:hover{
 .artinfo when{
  font-size:14px;
  font-family: 'Roboto', sans-serif;
- font-weight: bold;
+ font-weight: 500;
 }
 
 .artinfo med{
