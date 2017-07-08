@@ -17,10 +17,8 @@ color blue = #4286f4;
 color green = #70FF33;
 color white = (255);
  
-int slide = 1; //defining slide #
-
 //button variables
-int rectX = 250;
+int rectX = 50;
 int rectY = 515; 
 int rectSizeX = 100; 
 int rectSizeY = 50; 
@@ -30,12 +28,12 @@ int rectX2 = 450;
 int rectY2 = 515;
 
 //title slide text box restrictions 
-int textX = 75; 
-int textY = 100;
-int textX2 = 500;
-int textY2 = 300;
-int space2 = 25;
-int textY3 = textY + 85;
+////int textX = 75; 
+////int textY = 100;
+//int textX2 = 500;
+//int textY2 = 300;
+//int space2 = 25;
+//int textY3 = textY + 85;
 
 //instructions text box restrictions
 int textA = 300; 
@@ -59,7 +57,6 @@ boolean rectOver2 = false;
 boolean square1 = false;
 boolean circle1 = false;
 boolean triangle1 = false;
-
 
 //Instructions text strings
 String c = "c/C  = Circle";
@@ -90,20 +87,13 @@ void draw(){
   update(mouseX, mouseY); //tracks mouse coordinates
   background(white);
   //Using switch function to go between directions and canvas.
-  switch(slide){
-  case 1:
-  titleText();
-  break;
-
-  case 2:
    for (int i = pshapes.size()-1; i>=0; i--){
     shape(pshapes.get(i));
    }
    
    case2();
 
-    break;
-  }
+  
   
 //general rectangle  
   rectOver();  
@@ -135,17 +125,11 @@ void update(int x, int y) {
 
 void mousePressed(){
   if (rectOver) {
-    if(slide < 2){
-    slide++;
-    }
-  else {
-    slide = 1;
     pshapes.clear();
     square1 = false;
     circle1 = false;
     triangle1 = false;
-    }
-}
+  }
 
   if (circle1 == true) {
    PShape circ = (createShape(ELLIPSE, mouseX, mouseY, radius+size, radius+size));
@@ -169,7 +153,6 @@ void mousePressed(){
 }
 
 void keyPressed() {
-if (slide == 2){
   if (key == '-' || key == '_'){
    size-=10;
   }
@@ -225,7 +208,6 @@ if (slide == 2){
  }
  
 }
-}
 
 void reg(){
   textSize(12);
@@ -273,50 +255,33 @@ void buttonSmall(){
   }
 }
 
-void whichSlide(){
-  if (slide == 1) {
-   textSize(16);
-  }
-  else if (slide == 2){
-    textSize(14);
-  }
-  else{
-  }
-}
-
 void textGray(){
-  whichSlide();
+  textSize(14);
   textAlign(LEFT);
   fill(gray);
 }
 
 void textRed(){
-  whichSlide();
+  textSize(14);
   textAlign(LEFT);
   fill(red);
 }
 
 void textBlue(){
-  whichSlide();
+  textSize(14);
   textAlign(LEFT);
   fill(blue);
 }
 
 void textGreen(){
-  whichSlide();
+  textSize(14);
   textAlign(LEFT);
   fill(green);
 }
 
 void textButton(){
-   if (slide == 1){
-   button();
-   text("NEXT",rectX+50,rectY+30);
-  }
-  else if (slide == 2){ 
    button();
    text("RESET",rectX+50,rectY+30);
-  } 
 }
 
 void theShapes(){
@@ -335,28 +300,6 @@ void theShapes(){
      triangle(mouseX, mouseY, mouseX+tri2, mouseY+radius+size, mouseX-tri2, mouseY+radius+size);
    }
    else {}
- }
- 
-void titleText(){
-  big();
-   text("This program will allow you to draw circles, squares, and triangles of different sizes and colors across the canvas. In order to call and manipulate the shapes, use the following keys... ",textX,textY,textX2, textY2);
-   text(c, textX, textY3, textX2, textY2);
-   text(s, textX, textY3+space2, textX2, textY2);   text("t/T = Triangle", textX, textY3+space2*2, textX2, textY2); 
-   text(n, textX, textY3+space2*3, textX2, textY2);
-  bold();
-   text(larger, textX, textY3+4*space2, textX2, textY2);
-  small();
-   text(smaller, textX, textY3+5*space2, textX2, textY2);
-  textGray();
-   text(gra, textX, textY3+6*space2, textX2, textY2);
-  textRed();
-   text(r, textX, textY3+7*space2, textX2, textB2);
-  textBlue();
-   text(b, textX, textY3+8*space2, textX2, textY2);
-  textGreen();
-   text(gre, textX, textY3+9*space2, textX2, textY2);
-  big();
-   text(w, textX, textY3+10*space2, textX2, textY2);
  }
  
 void instructions(){
