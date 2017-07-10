@@ -333,19 +333,10 @@ a:hover{
 .text img{
  margin-top:20px;
  width:600px;
- height:600px
- margin-bottom:0px;
+ height:auto;
  }
 
 .text cap{
  font-size:10px;
  color:#606060;	
- margin-bottom:20px;
-}
-
-#theCanvas {
- width: 500px;
- margin: auto;
- border: 5px solid black;
- display: block;
 }
