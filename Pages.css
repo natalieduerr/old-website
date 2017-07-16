@@ -18,7 +18,7 @@ a{
 }
 
 a:hover{
- color:#000;	
+ color:#282828;	
 }
 
 /*HOME PAGE*/
@@ -51,7 +51,7 @@ a:hover{
 .links a:hover {
  font-family: 'Roboto', sans-serif;
  font size:16px;
- color:#000;
+ color:#282828;
  margin-top:100px;
  letter-spacing: 5px;
  transition-duration: 0.6s;
@@ -98,6 +98,7 @@ a:hover{
  float:left;
  border-style:solid;
  border-width:2px;
+ border-color: #282828;
  padding:20px; 
  margin-right:18px;
  margin-bottom:18px;
@@ -152,7 +153,7 @@ a:hover{
 }
 
 .projectbox:hover .projtitle a{
- color:#000;
+ color:#282828;
 }
 
 .projectbox:hover .projtitle {
@@ -204,7 +205,7 @@ a:hover{
 }
 
 .pagelinks a:hover {
- color:#000;
+ color:#282828;
  transition-duration: 0.6s;
  -moz-transition-duration: 0.6s;
  -webkit-transition-duration: 0.6s;
@@ -226,7 +227,7 @@ a:hover{
  width:624px;
  height:auto;
  background:#fff;
- color:#000;
+ color:#282828;
  padding:20px;
  border-left-style: solid;
  border-left-width: 2px;
@@ -252,7 +253,7 @@ a:hover{
  column-width: 328px;
  margin-top:475px;
  word-wrap:break-word;
- color:#000;
+ color:#282828;
 }
 
 .more txt{	
@@ -292,7 +293,7 @@ a:hover{
  border-left-style: solid;
  border-left-width: 2px;
  border-left-color: rgb(210,35,42);
- color:#000;
+ color:#282828;
  font-weight: normal;
 
 }
@@ -333,7 +334,7 @@ a:hover{
  word-wrap: break-word;
  font-size:14px;
  font-family: 'Roboto', sans-serif;
- color:#000;
+ color:#282828;
  display:inline-block;
  line-height: 1.35;
 
