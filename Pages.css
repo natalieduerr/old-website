@@ -169,7 +169,7 @@ a:hover{
 
 /*ABOUT PAGE AND ART PAGE*/
 .pageheader{
- position: fixed;
+ position: absolute;
  height:80px;
  width:1024px;
  background-color: #fff;
@@ -244,7 +244,7 @@ a:hover{
  background-position: 100% 50%;
  background-image:url("../Graphics/Me.jpg");
  margin-bottom:10px;
- position: fixed;
+ position: absolute;
 }
 
 .more{
