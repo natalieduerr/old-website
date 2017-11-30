@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+	<style type="text/css">
+	body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #38a;
+}
+		
+	</style>
+	<body>
+		<div id="quiz"></div>
+		<button id="submit">Submit Quiz</button>
+		<div id="results"></div>
+	</body>
+
+	<script type="text/javascript">
+		(function() {
+  function buildQuiz() {
+    // we'll need a place to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+      // we'll want to store the list of answer choices
+      const answers = [];
+
+      // and for each available answer...
+      for (letter in currentQuestion.answers) {
+        // ...add an HTML radio button
+        answers.push(
+          `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+          </label>`
+        );
+      }
+
+      // add this question and its answers to the output
+      output.push(
+        `<div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join("")} </div>`
+      );
+    });
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join("");
+  }
+
+  function showResults() {
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll(".answers");
+
+    // keep track of user's answers
+    let numCorrect = 0;
+
+    // for each question...
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      // if answer is a
+      if (userAnswer == "a") {
+        // add to the one to the numCorrect
+        numCorrect++;
+      }
+      // if answer is b
+      if (userAnswer == "b") {
+      	numCorrect += 2;
+      	// add two to the numCorrect
+      }
+      // if answer is c
+      if (userAnswer == "c"){
+      	numCorrect += 3;
+      	// add three to the numCorrect
+      }
+      if (userAnswer == "d"){
+      	numCorrect += 4;
+      	// add four to the numCorrecr
+      }
+    });
+
+    // decides what park to show by averaging the score
+    if (numCorrect/myQuestions.length >= 3.5 && numCorrect/myQuestions.length <= 4){
+    	userPark = `You should head to Kevin Fitzgerald Park`;
+    }
+    if (numCorrect/myQuestions.length >= 2.5 && numCorrect/myQuestions.length < 3.5){
+    	userPark = `You should head to Peter's Park`;
+	}
+	if (numCorrect/myQuestions.length >= 1.5 && numCorrect/myQuestions.length < 2.5){
+    	 userPark = `You should head to Kevin Fitzgerald Park`;
+    }
+    if (numCorrect/myQuestions.length >= 1 && numCorrect/myQuestions.length < 1.5){
+    	userPark = `You should head to Boston Commons`;
+    }
+
+    // draws those results
+    resultsContainer.innerHTML = userPark;
+
+    ;}
+
+  const quizContainer = document.getElementById("quiz");
+  const resultsContainer = document.getElementById("results");
+  const submitButton = document.getElementById("submit");
+  const myQuestions = [
+    {
+      question: "What area of Boston is of most interest to you?",
+      answers: {
+        a: "Downtown Boston",
+        b: "Roxbury/Mission Hill",
+        c: "South End",
+        d: "Back Bay"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Of these options, which activity would you most enjoy right now?",
+      answers: {
+        a: "Checking out a new restaurant or cafe",
+        b: "Relaxing in the grass, looking over the city",
+        c: "Meeting new people",
+        d: "People watching"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Based on your mood right now, what genre of music would you like to listen to?",
+      answers: {
+        a: "Pop",
+        b: "R&B or Indie",
+        c: "Rock n' Roll",
+        d: "Blues or Jazz"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What kind of dog would you say you are?",
+      answers: {
+        a: "Gentle Basset Hound",
+        b: "Playful Labrador Retriever",
+        c: "Outgoing Corgi",
+        d: "Watchful German Shepherd"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What activity would you want to do with dogs right now?",
+      answers: {
+        a: "Play fetch or chase",
+        b: "Play frisbee",
+        c: "Anything would be fun",
+        d: "Watch them interact with other dogs or the environment"
+      },
+      correctAnswer: "d"
+    }    
+  ];
+
+  // display quiz right away
+  buildQuiz();
+
+  // on submit, show results
+  submitButton.addEventListener("click", showResults);
+})();
+
+
+		
+	</script>
+</html>
