@@ -13,14 +13,15 @@ $(document).ready(function() {
   var degrees = 0;
   $('.hamburger img').click(function rotateMe(e) {
 
-    // console.log(degrees);
-
     if (degrees == 90){
       degrees += -90;
-    }
-    else{
+    } else {
       degrees += 90;
     }
+
+    console.log(degrees);
+
+    //$('.img').addClass('rotated'); // for one time rotation
 
     $('.hamburger img').css({
 
@@ -32,6 +33,9 @@ $(document).ready(function() {
     });
 
   })
+
+
+
 
 });
 

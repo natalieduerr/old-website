@@ -6,6 +6,10 @@ html, * {
     box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 .side {
 	position: fixed;
 }
@@ -104,6 +108,11 @@ button{
 	padding-bottom: 50px;
 }
 
+
+.feedback {
+	width:700px;
+}
+
 .content-box iframe {
 	position: relative;
 	width: 100%;
@@ -125,6 +134,7 @@ button{
 	line-height: 1.3;
 	position: relative;
 	color:#8FD8D8;
+	padding-bottom: 3px;
 }
 
 .content a h1:hover {
@@ -145,7 +155,7 @@ button{
 }
 
 .content h2 {
-	font-size: 1.5vw;
+	font-size: 2.0vw;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.3;
 	position: relative;
@@ -163,6 +173,12 @@ button{
 
 .content .orange{
 	color: #d7b38e;
+}
+
+.sign {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 30px;
 }
 
 button {
@@ -218,6 +234,7 @@ button,
 	.content-box {
 		left: 480px;
 		top:80px;
+		width: 850px;
 	}
 	.content-box iframe {
 		height:500px;
