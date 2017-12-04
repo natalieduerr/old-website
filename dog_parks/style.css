@@ -100,7 +100,7 @@ button{
 }
 
 .content-box {
-	position: fixed;
+	position: absolute;
 	left: 45%;
 	top: 4%;
 	max-width:50%;
@@ -108,10 +108,37 @@ button{
 	padding-bottom: 50px;
 }
 
-
-.feedback {
-	width:700px;
+.content-box img{
+	width: 100%;
+	padding-bottom: 10px;
+	height: 100%;
 }
+
+.rate-container {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+
+.rating {
+	text-align: right;
+	margin: auto;
+	float: left;
+	width: 30%;
+}
+
+.score {
+	text-align: left;
+	letter-spacing: 2px;
+	float: right;
+	width: 50%;
+}
+
+/*.feedback {
+	width:100%;
+}*/
 
 .content-box iframe {
 	position: relative;
