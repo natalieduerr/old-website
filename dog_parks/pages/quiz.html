@@ -13,7 +13,9 @@
 	<div class = "hamburger"> <img class = "img" src = "../images/hamburger.png"></div>
 	<div class = "hamburger-links"> <center><a href ="../index.html">Home</a>
 									<a href ="parks.html">Parks</a>
-									<a href ="quiz.html">Quiz</a>
+									<div class = "on">
+                    <a href ="quiz.html">Quiz</a>
+                  </div>
 									<a href ="submit.html">Submit</a></center>
 								</div>
 	<div class = "sidebar">
@@ -103,20 +105,20 @@
 
     // decides what park to show by averaging the score
     if (numCorrect/myQuestions.length >= 3.5 && numCorrect/myQuestions.length <= 4){
-    	userPark = `You should head to The Fens`.link("fens.html");
+    	userPark = `The Fens`.link("fens.html");
     }
     if (numCorrect/myQuestions.length >= 2.5 && numCorrect/myQuestions.length < 3.5){
-    	userPark = `You should head to Peter's Park`.link("pp.html");
+    	userPark = `Peter's Park`.link("pp.html");
 	}
 	if (numCorrect/myQuestions.length >= 1.5 && numCorrect/myQuestions.length < 2.5){
-    	 userPark = `You should head to Kevin Fitzgerald Park`.link("kfp.html");
+    	 userPark = `Kevin Fitzgerald Park`.link("kfp.html");
     }
     if (numCorrect/myQuestions.length >= 1 && numCorrect/myQuestions.length < 1.5){
-    	userPark = `You should head to Boston Commons`.link("bc.html");
+    	userPark = `Boston Commons`.link("bc.html");
     }
 
     // draws those results
-    resultsContainer.innerHTML = userPark;
+    resultsContainer.innerHTML = 'The park you should head to is...' + '<br>'+ userPark;
 
     ;}
 

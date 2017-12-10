@@ -10,6 +10,11 @@ a {
 	text-decoration: none;
 }
 
+.hamburger-links .on {
+	text-decoration: underline;
+	display: inline;
+}
+
 .side {
 	position: fixed;
 }
@@ -24,6 +29,19 @@ button {
 	position: fixed;
 	width: 40%;
 	z-index: 1;
+}
+
+.park {
+	display: flex;
+}
+
+.park img {
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.park .text {
+	width: 90%;
 }
 
 .sidebar img{
@@ -136,10 +154,6 @@ button{
 	width: 50%;
 }
 
-/*.feedback {
-	width:100%;
-}*/
-
 .content-box iframe {
 	position: relative;
 	width: 100%;
@@ -245,6 +259,11 @@ button,
 	margin-bottom: 20px;
 }
 
+#results {
+	font-size:36px;
+	font-weight: 700;
+}
+
 .rotated {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -265,7 +284,7 @@ button,
 	}
 	.content-box iframe {
 		height:500px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	.page-title{
 		font-size: 35px;
@@ -367,6 +386,10 @@ button,
 
 	button:hover {
 		border-width: 1px;
+	}
+
+	.park img {
+		display: none;
 	}
 
 }
