@@ -38,10 +38,11 @@ button {
 .park img {
 	overflow: hidden;
 	padding-left: 20px;
+	flex: 0 0 50%;
 }
 
 .park .text {
-	width: 90%;
+	flex: 0 0 50%;
 }
 
 .sidebar img{
