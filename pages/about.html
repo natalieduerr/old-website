@@ -4,22 +4,33 @@
 
 <title>Natalie Duerr</title>
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
- --><link rel="stylesheet" type="text/css" href="../styles.css">
-
+<link rel="stylesheet" type="text/css" href="../styles.css">
+<style>
+ img {
+  position: absolute;
+  transition: opacity .5s ease-in;
+  width:400px;
+  height:500px;
+ }
+ img + img {
+  opacity: 0; 
+}
+</style>
 </head>
-
 <body>
 
 <div class="container">
- 
 
 <div class = "pageheader">
 <div class="pagetitle">Natalie Duerr</div>
 <div class="pagelinks"><a href="../index.html">home</a> - <a href="about.html">about</a> - <a href="../Duerr_Natalie_Resume.pdf">resume</a></div><br> 
 
-<div class="me"><img src = "me.jpg"></div>
-<div class ="about">I first became interested in design while working on my high school's yearbook during sophomore year. With very few art classes offered, I started out as a self taught designer. I am now pursuing a BFA in Design at Northeastern University, as well as minors in Art History and Computer Science. My portfolio showcases my ever-improving skills and work I have created over the past few years. I like to think of graphic design as a way to address complex communication issues while also considering the aesthetics of the client. I am always up for new design experiences and am willing to go above and beyond to make the client's vision possible.</div>
+<div class = "aboutcontainer">
+
+<img src = "about/1.png">
+<img src = "about/2.png">
+<img src = "about/3.png">
+<div class ="about">I first became interested in design while working on my high school's yearbook during sophomore year. With very few art classes offered, I started out as a self taught designer. I am now pursuing a BFA in Design, with a concentration in Interactive Design, at Northeastern University, as well as minors in Computer Science and Art History. My portfolio showcases my ever-improving skills and work I have created over the past few years. I like to think of design as a way to address complex communication issues while also considering the aesthetics of the project. My goal is to create meaningful interactions and experience for all kinds of people, all around the world. I am always up for new design experiences and am willing to go above and beyond to make the project vision possible.</div>
 
 
 <div class = "together">
@@ -59,6 +70,20 @@
 
 
 </div>
-<br> <br> <br>
+
+</div>
 </div>
 </body>
+</html>
+<script>
+var current = 0,
+    slides = document.getElementsByTagName("img");
+
+setInterval(function() {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  current = (current != slides.length - 1) ? current + 1 : 0;
+  slides[current].style.opacity = 1;
+}, 3000);
+        </script>
