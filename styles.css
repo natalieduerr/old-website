@@ -41,7 +41,6 @@ button{
 	-o-transition-duration:0.6s;
 }
 
-
 button:hover {
 	background-color: rgb(210,35,42);
 	border:none;
@@ -160,7 +159,7 @@ button:hover {
 }
 
 .projectboxthree{
- width: calc(1/3*100% - (1 - 1/3)*30px);
+width: calc(1/3*100% - (1 - 1/3)*30px);
 }
 
 .projectboximg{
@@ -226,10 +225,11 @@ button:hover {
 /*About*/
 
 .aboutcontainer {
-	display: block;
-	position: relative;
+	position: absolute;
 	width: 750px;
 	margin: auto;
+	left: 0;
+	right: 0;
 }
 
 .about{
@@ -247,32 +247,25 @@ button:hover {
  border: 2px solid rgb(210,35,42);
  margin-top:120px;
  margin-left:350px;
- position: absolute;
+ position: relative;
  transition-duration: .4s;
+ z-index: 1;
 }
 
 .about:hover {
 box-shadow: 0px 0px rgb(210,35,42);	
-
-}
-/*
-#me {
- width:400px;
- height:500px;
- overflow: hidden;
- margin-bottom:20px;
- position: absolute;
- opacity: 1;
- transition: opacity .5s ease-in;
 }
 
-#me + img {
-	opacity: 0;
-}*/
+.together{
+ display:flex;
+ width:100%;
+ justify-content: space-between;
+ position: relative;
+ margin-top: 100px;
+}
 
 .more {
  margin-top: 20px;
- width: 30%;
  margin-bottom:20px;
 }
 
@@ -298,15 +291,24 @@ box-shadow: 0px 0px rgb(210,35,42);
  font-size:12px;
  font-family: 'Roboto', sans-serif;
  line-height: 1.0;
-
 }
 
-.together{
- display:flex;
- width:100%;
- justify-content: space-between;
- position: absolute;
- margin-top: 500px;
+#aboutbutton {
+	position: relative;
+}
+
+@media only screen and (max-width: 900px){
+.container {
+	width: 100%;
+}
+.aboutcontainer {
+	margin-left: 10px;
+}
+
+.about {
+	box-shadow: 0px 0px;
+}
+
 }
 
 /*Pages*/
