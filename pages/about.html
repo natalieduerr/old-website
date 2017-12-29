@@ -19,10 +19,84 @@
   opacity: 0; 
 }
 
+@media only screen and (max-width: 760px){
+	img {
+		position: relative;
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+		z-index: 2;
+		object-position: 0% 40%;
+		margin-top: 5px;
+	}
+	img + img {
+		display: none;
+	}
+	.aboutcontainer{
+		padding-left: 1%;
+		width:calc(95/100*100% - (1 - 95/100)*1px);
+		left:0;
+	}
+
+	.about {
+		margin-left: calc(11.5/100*100% - (1 - 11.5/100)*30px);
+		width:calc(80/100*100% - (1 - 80/100)*30px);
+		margin-top: -230px;
+		padding-top: 245px;
+		z-index: 3;
+		background-color: transparent;
+		box-shadow: 0px 0px rgb(210,35,42);
+	}
+	.together {
+		margin-left: calc(11/100*100% - (1 - 11/100)*30px);
+		display: block;
+		margin-top: 0px;
+	}
+	.section {
+		padding-bottom: 5px;
+		padding-left: 20px;
+	}
+	.more{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	#aboutbutton{
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 761px){
+	.aboutcontainer {
+		left:0;
+	}
+	.about {
+		margin-top: 80px;
+		width: 340px;
+		box-shadow: 0px 0px rgb(210,35,42);
+	}
+	.aboutcontainer {
+		margin-left: 20px;
+		width: calc(90/100*100% - (1 - 90/100)*30px);
+	}
+	.together {
+		margin-top: 70px;
+	}
+}
+
+@media only screen and (max-width:900px) and (min-width: 800px){
+	.about {
+		 margin-top: 80px;
+		 width: 340px;
+		 box-shadow: 20px 20px rgb(210,35,42);
+	}
+	.together {
+		margin-top: 70px;
+	}
+}
+
 </style>
 </head>
 <body>
-
 <div class="container">
 
 <div class = "pageheader">
@@ -31,9 +105,10 @@
 
 <div class = "aboutcontainer">
 
+	<img src = "about/2.png">	
 	<img src = "about/1.png">
-	<img src = "about/2.png">
 	<img src = "about/3.png">
+
 
 <div class ="about">I first became interested in design while working on my high school's yearbook during sophomore year. With very few art classes offered, I started out as a self taught designer. I am now pursuing a BFA in Design, with a concentration in Interactive Design, at Northeastern University, as well as minors in Computer Science and Art History. My portfolio showcases my ever-improving skills and work I have created over the past few years. My goal is to create meaningful interactions and experiences for all kinds of people, all around the world. I am always up for new design experiences and am willing to go above and beyond to make the project vision possible. When I'm not designing or programming, you can find me reading a good book, playing video games, discovering new music to listen to, or trying out new places to eat with my friends!</div>
 
@@ -52,8 +127,8 @@
 	</div>
 
 	<div class = "more">
-		<div class = "section">
 			<titl>Experience</titl><br>
+			<div class = "section">
 			<txt><b>Scout Studio</b><br>Designer<br></txt>
 			<smol>September 2017 - Present &#8226  Boston, MA </smol>
 		</div>
@@ -69,7 +144,9 @@
 
 	<div class = "more">
 		<titl>Skills</titl><br>
+		<div class = "section">
 		<txt><b>Adobe Creative Suite</b><br><b>HTML/CSS</b><br>Basic Java and Javascript<br>Microsoft Office<br>Apple iWork<br>CorrelDRAW<br>DrRacket</txt>
+	</div>
 	</div>
 </div>
 <div id = "aboutbutton">
@@ -95,7 +172,12 @@ setInterval(function() {
   for (var i = 0; i < slides.length; i++) {
     slides[i].style.opacity = 0;
   }
-  current = (current != slides.length - 1) ? current + 1 : 0;
-  slides[current].style.opacity = 1;
+  if(document.documentElement.clientWidth >= 761){
+	  current = (current != slides.length - 1) ? current + 1 : 0;
+	  slides[current].style.opacity = 1;
+  } else {
+  	  slides[0].style.opacity = 1;
+  }
 }, 3000);
+
         </script>
