@@ -112,6 +112,7 @@ button:hover {
  width: 98%;
  margin:auto;
  justify-content: space-between;
+ -webkit-justify-content: space-between;
  display: -webkit-flex;
  display: flex;
  -webkit-flex-direction: row;
@@ -318,20 +319,6 @@ box-shadow: 0px 0px rgb(210,35,42);
 #aboutbutton {
 	position: relative;
 }
-
-/*@media only screen and (max-width: 900px){
-.container {
-	width: 100%;
-}
-.aboutcontainer {
-	margin-left: 10px;
-}
-
-.about {
-	box-shadow: 0px 0px;
-}
-
-}*/
 
 /*Pages*/
 
