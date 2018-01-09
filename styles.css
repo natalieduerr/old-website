@@ -63,17 +63,10 @@ button:hover {
  width:98%;
 }
 
-.homecontainer .pagetitle{
-	margin:30px 0px 0px 30px;
-}
-
-.homecontainer .pagelinks {
-	margin-left: 30px;
-}
-
 .pagetitle, .pagelinks {
-	margin-left: 10px;
-	margin-top: 10px;
+ width: 98%;
+ margin:auto;
+ margin-top: 10px;
 }
 
 .pagetitle{
