@@ -318,29 +318,35 @@ box-shadow: 0px 0px rgb(210,35,42);
 
 /*Pages*/
 
-.artinfo{
- width:150px;
- position:fixed;
- padding-left: 20px;
- margin-left:10px;
- line-height: 1.3;
- word-wrap: break-word;
- margin-top: 250px;
- display: inline-block;
- border-left: 2px solid rgb(210,35,42);
- color:#282828;
- font-weight: normal;
+.about-container{
+ width:100%;
+}
+
+.artheader {
+	position: relative;
+	margin-left: -10px;
+	padding-right: 18px;
+	height:400px;
+	width:100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 700px auto;
+}
+
+.artinfo {
+	margin: auto;
+	padding-top: 10px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	border-top: 2px solid rgb(210,35,42);
 }
 
 .artinfo titl{
- font-size:16px;
+ font-size:24px;
  font-family: 'Roboto Slab', serif;
  color:rgb(210,35,42);
-}
-
-.artinfo blurb{
- font-size:12px;
- font-family: 'Roboto', sans-serif;
+ letter-spacing: 1px;
 }
 
 .artinfo when{
@@ -349,19 +355,23 @@ box-shadow: 0px 0px rgb(210,35,42);
  font-weight: 500;
 }
 
-.artinfo med{
+.artinfo blurb{
  font-size:14px;
  font-family: 'Roboto', sans-serif;
 }
 
-.pagecontainer{
+.pagecontainer,
+.artinfo {
  position:relative;
- width:55%;
- max-width: 600px;
- padding: 20px;
- margin-left:250px;
- display: inline-block;
- z-index: 9;
+ display: block;
+ width:65%;
+ max-width: 700px;
+}
+
+.pagecontainer{
+ padding-top: 15px;
+ margin: auto;
+ border-top: 1px solid rgb(210,35,42);
 }
 
 .pagecontainer .text{	
@@ -374,41 +384,33 @@ box-shadow: 0px 0px rgb(210,35,42);
 }
 
 .pagecontainer .text img{
- margin-top:20px;
+ margin-bottom:10px;
+ padding-top:10px;
  width:100%;
  height:auto;
 }
 
-.pagecontainer .cap{
+.pagecontainer .cap,
+.cap{
+ margin-top: -10px;
  font-size:12px;
  color:#606060;	
  line-height: 1.3;
+ margin-bottom: 10px;
+ display: inline-block;
 }
 
 .pagecontainer iframe {
+	margin-top: 5px;
 	width: 100%;
-	margin-top: 20px;
 	height: 500px;
+	margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 800px){
+	.pagecontainer,
 	.artinfo {
-		position: relative;
-		margin-top: 10px;
-		border-left:0px;
-		margin-left: 10px;
-		padding: 10px 0px;
-		padding-bottom: 30px;
-		border-top: 2px solid rgb(210,35,42);
-		width:200px;
-
-	}
-	.pagecontainer {
-		padding: 10px 0px; 
-		border-top: 1px solid rgb(210,35,42);
-		width: 85%;
-		display: block;
-		margin-left:10px;
+		width:70%;
 	}
 }
 
@@ -454,7 +456,7 @@ box-shadow: 0px 0px rgb(210,35,42);
 	transition: border 0.4s ease-out;
 	opacity: 1;
 	transition: opacity 0.4s ease-out;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .smallimg {
