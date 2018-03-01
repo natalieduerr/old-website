@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="../favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="../favicon/favicon-192.png">
 	<link rel="icon" type="image/png" sizes="160x160" href="../favicon/favicon-160.png">
@@ -11,177 +12,218 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16.png">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About - Natalie Duerr</title>
+	<title>About - Natalie Duerr</title>
 
-<link rel="stylesheet" type="text/css" href="../styles.css">
-<style>
- img {
-  position: absolute;
-  transition: opacity .5s ease-in;
-  width:400px;
-  height:500px;
-  z-index:0;
- }
- img + img {
-  opacity: 0; 
-}
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<style>
+		img {
+			position: absolute;
+			transition: opacity .5s ease-in;
+			width: 400px;
+			height: 500px;
+			z-index: 0;
+		}
 
-@media only screen and (max-width: 760px){
-	img {
-		position: relative;
-		height: 200px;
-		width: 100%;
-		object-fit: cover;
-		z-index: 2;
-		object-position: 0% 40%;
-		margin-top: 5px;
-	}
-	img + img {
-		display: none;
-	}
-	.aboutcontainer{
-		padding-left: 1%;
-		width:calc(95/100*100% - (1 - 95/100)*1px);
-		left:0;
-	}
+		img+img {
+			opacity: 0;
+		}
 
-	.about {
-		margin-left: calc(11.5/100*100% - (1 - 11.5/100)*30px);
-		width:calc(80/100*100% - (1 - 80/100)*30px);
-		margin-top: -230px;
-		padding-top: 245px;
-		z-index: 3;
-		background-color: transparent;
-		box-shadow: 0px 0px rgb(210,35,42);
-	}
-	.together {
-		margin-left: calc(11.5/100*100% - (1 - 11.5/100)*30px);
-		display: block;
-		margin-top: 0px;
-		width:90%;
-	}
-	.section {
-		padding-bottom: 5px;
-		padding-left: 20px;
-	}
-	.more{
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
-	#aboutbutton{
-		margin-left: 20px;
-	}
-}
+		@media only screen and (max-width: 760px) {
+			img {
+				position: relative;
+				height: 200px;
+				width: 100%;
+				object-fit: cover;
+				z-index: 2;
+				object-position: 0% 40%;
+				margin-top: 5px;
+			}
+			img+img {
+				display: none;
+			}
+			.aboutcontainer {
+				padding-left: 1%;
+				width: calc(95/100*100% - (1 - 95/100)*1px);
+				left: 0;
+			}
 
-@media only screen and (max-width: 800px) and (min-width: 761px){
-	.aboutcontainer {
-		left:0;
-	}
-	.about {
-		margin-top: 80px;
-		width: 340px;
-		box-shadow: 0px 0px rgb(210,35,42);
-	}
-	.aboutcontainer {
-		margin-left: 20px;
-		width: calc(90/100*100% - (1 - 90/100)*30px);
-	}
-	.together {
-		margin-top: 70px;
-	}
-}
+			.about {
+				margin-left: calc(11.5/100*100% - (1 - 11.5/100)*30px);
+				width: calc(80/100*100% - (1 - 80/100)*30px);
+				margin-top: -230px;
+				padding-top: 245px;
+				z-index: 3;
+				background-color: transparent;
+				box-shadow: 0px 0px rgb(210, 35, 42);
+			}
+			.together {
+				margin-left: calc(11.5/100*100% - (1 - 11.5/100)*30px);
+				display: block;
+				margin-top: 30px;
+				width: 90%;
+			}
+			.section {
+				padding-bottom: 5px;
+				padding-left: 20px;
+			}
+			.more {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			#aboutbutton {
+				margin-left: 20px;
+			}
+		}
 
-@media only screen and (max-width:900px) and (min-width: 800px){
-	.about {
-		 margin-top: 80px;
-		 width: 340px;
-		 box-shadow: 20px 20px rgb(210,35,42);
-	}
-	.together {
-		margin-top: 70px;
-	}
-}
-</style>
+		@media only screen and (max-width: 800px) and (min-width: 761px) {
+			.aboutcontainer {
+				left: 0;
+			}
+			.about {
+				margin-top: 100px;
+				width: 340px;
+				box-shadow: 0px 0px rgb(210, 35, 42);
+			}
+			.aboutcontainer {
+				margin-left: 20px;
+				width: calc(90/100*100% - (1 - 90/100)*30px);
+			}
+
+		}
+
+		@media only screen and (max-width:900px) and (min-width: 800px) {
+			.about {
+				margin-top: 100px;
+				width: 340px;
+				box-shadow: 20px 20px rgb(210, 35, 42);
+			}
+		}
+	</style>
 </head>
 
 <body>
-<div class="container">
-<div class = "pageheader">
-<nav>
-	<div class="pagetitle"><a href = "../index.html">Natalie Duerr</a></div>
-	<div class="pagelinks"><a href="../index.html">home</a> - <a href="about.html">about</a> - <a href="../Duerr_Natalie_Resume.pdf">resume</a></div><br>
-</nav>
-<section>
-<div class = "aboutcontainer">
-	<img src = "about/2.png">	
-	<img src = "about/1.png">
-	<img src = "about/3.png">
-<div class ="about">I first became interested in design while working on my high school's yearbook during sophomore year. With very few art classes offered, I started out as a self taught designer. I am now pursuing a BFA in Design, with a concentration in Interaction Design, at Northeastern University, as well as minors in Computer Science and Art History. My portfolio showcases my ever-improving skills and work I have created over the past few years. My goal is to create meaningful interactions and experiences for all kinds of people, all around the world. I am always up for new design experiences and am willing to go above and beyond to make the project vision possible. When I'm not designing or programming, you can find me reading a good book, playing video games, discovering new music to listen to, or trying out new places to eat with my friends!</div>
+	<div class="container">
+		<div class="pageheader">
+			<nav>
+				<div class="pagetitle">
+					<a href="../index.html">Natalie Duerr</a>
+				</div>
+				<div class="pagelinks">
+					<a href="../index.html">home</a> -
+					<a href="about.html">about</a> -
+					<a href="../Duerr_Natalie_Resume.pdf">resume</a>
+				</div>
+				<br>
+			</nav>
+			<section>
+				<div class="aboutcontainer">
+					<img src="about/3.png">
+					<img src="about/1.png">
+					<img src="about/2.png">
+					<div class="about">I first became interested in design while working on my high 	
+						school's yearbook. With very few art classes offered, I
+						started out as a self taught designer. I am now pursuing a BFA in Design, with a concentration in Interaction Design,
+						at Northeastern University, as well as minors in Computer Science and Art History. My goal is to create meaningful
+						interactions and experiences for all kinds of people, all around the world. Making someone's day just a little bit
+						easier is what keeps me designing. When I'm not designing or developing, you can find me reading a good book, playing video games, or trying out new places to eat with my friends!</div>
 
-<div class = "together">
-	<div class = "more">
-		<titl>Education</titl><br>
-		<div class = "section">
-			<txt> <b>Northeastern University</b><br>BFA in Design<br></txt>
-			<smol>Minor in Computer Science and Art History<br>Class of 2021 &#8226 Boston, MA</smol>
-		</div>
-		<div class = "section">
-			<txt><b>Bergen County Academies</b><br>High School Diploma with Honors</txt><br>
-			<smol>Class of 2016 &#8226 Hackensack, NJ</smol>
-		</div>
-	</div>
+					<div class="together">
+						<div class="more">
+							<titl>Education</titl>
+							<br>
+							<div class="section">
+								<txt>
+									<b>Northeastern University</b>
+									<br>BFA in Design
+									<br>
+								</txt>
+								<smol>Minor in Computer Science and Art History
+									<br>Class of 2021 &#8226 Boston, MA</smol>
+							</div>
+							<div class="section">
+								<txt>
+									<b>Bergen County Academies</b>
+									<br>High School Diploma with Honors</txt>
+								<br>
+								<smol>Class of 2016 &#8226 Hackensack, NJ</smol>
+							</div>
+						</div>
 
-	<div class = "more">
-			<titl>Experience</titl><br>
-			<div class = "section">
-			<txt><b>Scout Studio</b><br>Designer<br></txt>
-			<smol>September 2017 - Present &#8226  Boston, MA </smol>
-		</div>
-		<div class ="section">
-			<txt><b>Tastemakers Magazine</b><br>Designer<br></txt>
-			<smol>January 2017 - Present &#8226  Boston, MA </smol>
-		</div>
-		<div class = "section">
-			<txt><b>Readorium</b><br>Design Intern</txt><br>
-			<smol>Sept. 2015 - May 2016 &#8226  Teaneck, NJ </smol>
-		</div>
-	</div>
+						<div class="more">
+							<titl>Experience</titl>
+							<br>
+							<div class="section">
+								<txt>
+									<b>Scout Studio</b>
+									<br>Designer
+									<br>
+								</txt>
+								<smol>September 2017 - Present &#8226 Boston, MA </smol>
+							</div>
+							<div class="section">
+								<txt>
+									<b>Tastemakers Magazine</b>
+									<br>Designer
+									<br>
+								</txt>
+								<smol>January 2017 - Present &#8226 Boston, MA </smol>
+							</div>
+							<div class="section">
+								<txt>
+									<b>Readorium</b>
+									<br>Design Intern</txt>
+								<br>
+								<smol>Sept. 2015 - May 2016 &#8226 Teaneck, NJ </smol>
+							</div>
+						</div>
 
-	<div class = "more">
-		<titl>Skills</titl><br>
-		<div class = "section">
-		<txt><b>Adobe Creative Suite</b><br><b>HTML/CSS</b><br>Basic Java and Javascript<br>Microsoft Office<br>Apple iWork<br>CorrelDRAW<br>Racket</txt>
+						<div class="more">
+							<titl>Skills</titl>
+							<br>
+							<div class="section">
+								<txt>
+									<b>Adobe Creative Suite</b>
+									<br>
+									<b>HTML/CSS</b>
+									<br>Basic Java and Javascript
+									<br>Microsoft Office
+									<br>Apple iWork
+									<br>CorrelDRAW
+									<br>Racket</txt>
+							</div>
+						</div>
+					</div>
+					<div id="aboutbutton">
+						<center>
+							<a href="../Duerr_Natalie_Resume.pdf">
+								<button>Learn more!</button>
+							</a>
+						</center>
+					</div>
+				</div>
+			</section>
+		</div>
 	</div>
-	</div>
-</div>
-<div id = "aboutbutton">
-<center>
-	<a href = "../Duerr_Natalie_Resume.pdf"> <button>Learn more!</button> </a>
-</center>
-</div>
-</div>
-</section>
-</div>
-</div>
 </body>
+
 </html>
 
 <script>
-var current = 0,
-    slides = document.getElementsByTagName("img");
+	var current = 0,
+		slides = document.getElementsByTagName("img");
 
-setInterval(function() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = 0;
-  }
-  if(document.documentElement.clientWidth >= 761){
-	  current = (current != slides.length - 1) ? current + 1 : 0;
-	  slides[current].style.opacity = 1;
-  } else {
-  	  slides[0].style.opacity = 1;
-  }
-}, 3000);
+	setInterval(function () {
+		for (var i = 0; i < slides.length; i++) {
+			slides[i].style.opacity = 0;
+		}
+		if (document.documentElement.clientWidth >= 761) {
+			current = (current != slides.length - 1) ? current + 1 : 0;
+			slides[current].style.opacity = 1;
+		} else {
+			slides[0].style.opacity = 1;
+		}
+	}, 3000);
 
-        </script>
+</script>
