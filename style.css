@@ -877,6 +877,7 @@ img {
   width: 45vw;
   height: 45vw;
   opacity: 0.5;
+  z-index: -2;
   position: absolute;
 }
 
