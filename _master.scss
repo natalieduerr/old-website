@@ -1,0 +1,239 @@
+//colors 
+$background:#D3E7E4;
+$background80: rgba(211,231,228,.9);
+$text: #B23838;
+$link: #27675E;
+$white: #ffffff;
+$black: #000000;
+$circle: #FFF790;
+$grey: #575757;
+
+// project colors
+$masshike: #F2F2F2;
+$norwich: #92F09C;
+$nexpo: #F4D897;
+$national: rgb(240, 146, 146);
+$tastemakers: #f48f6f;
+$digital: #94cbda;
+
+//mix-ins
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}  
+
+@import url("https://use.typekit.net/eqk0llf.css");
+
+// fonts
+.ref-bold, %ref-bold {
+    font-family: refrigerator-deluxe, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.ref-reg, %ref-reg {
+    font-family: refrigerator-deluxe, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.din-reg, %din-reg {
+    font-family: din-2014, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.din-italic, %din-italic {
+    font-family: din-2014, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.din-bold, %din-bold {
+    font-family: din-2014, sans-serif;
+    font-weight: 700;
+}
+
+.full-width {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
+// line-hover basic effect
+%line-hover {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        @include transition(.2s);
+        z-index:-1;
+    }
+
+    &:hover, &:focus {
+        &::before {
+            height:10px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin:0px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+b {
+    font-weight: 700;
+}
+
+p, span, .project__para ul, .project__para ol{
+    @extend %din-reg;
+    font-size:16px;
+    line-height:1.35;
+
+    a {
+        color:$link;
+        @extend %line-hover;
+        @extend %din-italic;
+    }
+
+    a::before {
+        background-color:$background;
+    }
+}
+
+.project__para ul {
+    margin-top:0;
+}
+
+h1, .h1 {
+    @extend %ref-bold;
+    color:$text; 
+    font-size:128px;
+    line-height: 140px;
+    padding-bottom:15px;
+}
+
+h2, .h2 {
+    @extend %din-bold;
+    color:$text;
+    font-size:64px;
+    line-height:72px;
+    padding-bottom: 30px;
+}
+
+h3, .h3 {
+    color:$text;
+    @extend %din-reg;
+    font-size:32px;
+    line-height:40px;
+    padding-bottom: 10px;
+}
+
+h4, .h4 {
+    color:$text;
+    @extend %din-reg;
+    font-size:20px;
+    line-height:22px;
+}
+
+.column img {
+    align-self: baseline;
+}
+
+.padding-top-20 {
+    padding-top:20px;
+}
+
+.no-padding-bottom {
+    padding-bottom:0 !important;
+}
+
+@media only screen and (max-width: 40em) {
+    h1, .h1 {
+        font-size:86px;
+        line-height:94px;
+    }
+
+    h2, .h2 {
+        font-size:48px;
+        line-height:60px;
+    }
+
+    h3, h3 {
+        font-size:30px;
+        line-height:40px;
+    }
+}
+
+@keyframes fadeIn {
+    from { 
+       opacity:0; 
+   } to { 
+       opacity:1; 
+   }
+}
+
+@keyframes fadeDownIn {
+    from { 
+       opacity:0; 
+       transform: translateY(-40px);
+   } to { 
+       opacity:1; 
+       transform: translateY(0px);
+   }
+}
+
+@keyframes fadeUpIn {
+    from { 
+        opacity:0; 
+        transform: translateY(40px);
+    } to { 
+        opacity:1; 
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeLeftIn {
+    from { 
+        opacity:0; 
+        transform: translateX(-40px);
+    } to { 
+        opacity:1; 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeRightIn {
+    from { 
+        opacity:0; 
+        transform: translateX(40px);
+    } to { 
+        opacity:1; 
+        transform: translateX(0px);
+    }
+}

@@ -1,103 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130657209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
-	<link rel="apple-touch-icon" href="favicon/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+        gtag('config', 'UA-130657209-1');
+    </script>
 
-<title>Natalie Duerr</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Natalie Duerr</title>
 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- importing foundation's grid -->
+    <link rel="stylesheet" type="text/css" href="foundations/app.css">
+    <link rel="stylesheet" type="text/css" href="foundations/foundation.css">
+    <link rel="stylesheet" type="text/css" href="foundations/foundation.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- importing jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <script src="home_game.js"></script>
 </head>
 
-<body>
-
-<div id="homecontainer">
- 
-<div class="pagetitle">Natalie Duerr</div>
-<div class="pagelinks"><a href="../">home</a> &middot; <a href="pages/about.html">about</a> &middot; <a href="Duerr_Natalie_Resume.pdf">resume</a></div><br> 
-
-<div class = "project-container">
-
-<div class = "bigproject" style = "background-image: url(icons/masshike.svg); background-color: rgb(112, 112, 112); background-size:250px">
-	<a href ="pages/mass-hike.html">
-	<div class = "projectboximg"></div>
-		<div class ="title">Mass Hike</div>
-	</a>
-</div> 
-
-<div class = "smallproject" style = "background-image: url(icons/nexpo.png); background-color: #F4D897;">
-	<a href ="pages/nexpo.html">
-	<div class = "projectboximg"></div>
-		<div class ="title">NEXPO 2017</div>
-	</a>
-</div> 
-
-<div class="projectbox" style = "background-image: url(icons/designer.png); background-color: #92F09C;">
-	<a href ="pages/designer.html">
-	<div class="projectboximg"></div>
-		<div class ="title">Designer Accordian</div>
-	</a>
-</div> 
-
-<div class="projectbox" style = "background-image: url(icons/dogpark.png); background-color: #90EEEE;">
-	<a href ="pages/dogpark.html">
-	<div class="projectboximg"></div>
-		<div class ="title">A Dog Park for You</div>
-	</a>
-</div>
-
-
-<div class="projectboxthree" style = "background-image: url(icons/incredibles.png); background-color: #C7ACFB;">
-	<a href = "pages/Incredibles.html">
-	<div class="projectboximg"></div>
-		<div class = "title">The Incredibles</div>
-	</a>
-</div>
-
-<div class = "projectboxthree" style = "background-image: url(icons/tastemakers.png); background-color: #FFE376;">
-	<a href = "pages/tastemakers.html">
-	<div class="projectboximg">
-	</div>
-		<div class = "title">Tastemakers</div>
-	</a>
-</div> 
-
-<div class="projectboxthree" style = "background-image: url(icons/illustration.png); background-color: #9FFCB5;">
-	<a href = "pages/digital.html">
-	<div class="projectboximg"></div>
-		<div class ="title">Digital Illustrations</div>
-	</a>
-</div>
-
-</div>
-
-<center>
-	<a href = "#homecontainer"> <button>Back to top &#8593;</button> </a>
-</center>
-
-
-</body></html>
-
-
-</div>
-</div>
+<body class="home-back polka-back-inverse">
+    <div class="back">
+        <!-- purposefully left empty, circles drawn by user get addded here by jquery -->
+    </div>
+    <nav class="nav">
+        <a class="initials" tabindex="1" href="">nmd</a>
+    </nav>
+    <div class="home">
+        <div class="row">
+            <div class="home_about column small-12 large-10">
+                <h1 class>Natalie Duerr.</h1>
+                <h2>UI/UX Designer</h2>
+                <h3>Making someone's day just a little bit better is what keeps me designing.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <ul class="stylelinks vertical medium-horizontal menu">
+                    <li><a class="" tabindex="2" href="projects.html">projects</a> </li>
+                    <li><a class="" tabindex="3" href="about.html">about</a> </li>
+                    <li><a class="" tabindex="4" href="Duerr_Natalie_Resume.pdf">resume</a> </li>
+                    <li><a class="game-click" tabindex="5"> play a game</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row instructions">
+        <h3 class="home__text column small-12">
+            Want to make a new background for my home page? Use the mouse or navigate with the arrow keys to move the
+            yellow circle. Click or press the 'p' key to add it to the background. Use the + and - keys on the keyboard
+            to make the circle bigger or smaller.
+        </h3>
+    </div>
+    <button type="button" class="view-button game-click">
+        view
+    </button>
 </body>
+
 </html>

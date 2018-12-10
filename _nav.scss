@@ -1,0 +1,157 @@
+%effect {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.4s;
+}
+
+%before-effect {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.nav {
+    background-color: $background80;
+    z-index: 999;
+    position:fixed;
+    width:100%;
+}
+
+.home-back .nav {
+    background-color:transparent;
+}
+
+.nav__links li{
+    margin-right:20px;
+}
+
+.nav__links, .nav__links li, .nav__links a{
+    display: inline;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav__links {
+    @extend %din-reg;
+    font-size:24px;
+}
+
+.nav__links--not {
+    @extend %effect;
+    padding: 3px 10px;
+    position: relative;
+    color:$link;
+}
+
+.nav__links--not:before {
+    @extend %before-effect;
+    background-color: $link; 
+}
+
+.nav__links--not:focus,
+.nav__links--not:hover{
+    color: $white;
+}
+
+.nav__links--not:focus:before,
+.nav__links--not:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.initials {
+    @extend %line-hover;
+    font-size: 36px;
+    color: $link;
+    @extend %ref-bold;
+    margin: 2px 0px 10px 20px;
+    padding: 0;
+    a {
+        font-size: 36px;
+        color: $link;
+        @extend %ref-bold;
+    }
+}
+
+.nav__links--current {
+    @extend %effect;
+    background-color:$link;
+    color:$white;
+    padding: 3px 10px;
+    position: relative;
+    transition-property:padding;
+    transition-duration:.2s;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size:30px;
+    color: $link;
+
+    & img {
+        height:40px;
+        width:40px;
+        margin:12px 10px 15px 0px;
+    }
+}
+
+.hamburger__links {
+    height:100vh;
+    margin-top: -100vh;
+    @include transition(.4s);
+}
+
+.hamburger__links ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10vh;
+    @extend %din-reg;
+
+    & li {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 36px;
+    }
+}
+
+.list-of-nav {
+    padding: 12px 30px 15px 0px;
+}
+
+@media only screen and (max-width: 40em) {
+    .nav__links {
+        display:none;
+    }
+
+    .nav {
+        width:100vw;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .hamburger {
+        display:none;
+    }
+
+}
+

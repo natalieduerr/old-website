@@ -1,0 +1,83 @@
+.group {
+    padding-bottom: 30px;
+}
+
+.photos-padding {
+    padding-top:12%;
+}
+
+.small {
+    line-height:.8;
+}
+
+.small-resume {
+    margin-top:100px;
+    padding-bottom:50px;
+}
+
+.resume__h2 {
+    @extend %ref-bold;
+    font-size:36px;
+    padding-bottom:0px;
+}
+
+.resume__h3 {
+    @extend %din-bold;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom:0;
+}
+
+.small {
+    display: block;
+    content: "";
+    margin-top: 10px;
+}
+
+.container {
+    padding-top:180px;
+}
+
+.small-resume .column {
+    margin-bottom:20px;
+}
+
+@media only screen and (max-width: 63.9375em) {
+    .container {
+        padding-top:120px;
+
+        & .row .column p {
+            margin-top:30px;
+        }
+    }
+
+    .small-resume {
+        margin-top:40px;
+    }
+
+}
+
+.down {
+    animation:fadeDownIn ease-in 1;
+    animation-duration:1s;
+    opacity: 1;
+}
+
+.up {
+    animation:fadeUpIn ease-in 1;
+    animation-duration:1s;
+    opacity: 1;
+}
+
+.left {
+    animation:fadeLeftIn ease-in 1;
+    animation-duration:1s;
+    opacity: 1;
+}
+
+.right {
+    animation:fadeRightIn ease-in 1;
+    animation-duration:1s;
+    opacity: 1;
+}
+

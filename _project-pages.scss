@@ -1,0 +1,252 @@
+#nexpo-page{
+    background-color: #486585;
+}
+
+#masshike-page {
+    background-color: #4B804F;
+}
+
+#norwich-page {
+    background-color: #8e001c;
+}
+
+#tastemakers-page {
+    background-color: #000000;
+}
+
+#digital-page {
+    background-color: #5401AB;
+}
+
+#parks-page {
+    background-color: #9C3C00; 
+}
+
+.header__project {
+    @extend %ref-reg;
+    color:$white;
+    font-size:72px;
+    line-height:85px;
+    padding-top:20px;
+}
+
+.red {
+    color:$text;
+}
+
+.header {
+    position: inherit;
+    z-index:999;
+    height:500px;
+}
+
+.below-nav{
+    animation:fadeDownIn ease 1;
+    animation-duration:1.5s;
+}
+
+.all {
+    animation:fadeIn ease-in 1;
+    animation-duration:1s;
+    opacity:1;
+}
+
+.header__back {
+    z-index: 0;
+    position: absolute;
+    height:500px;
+
+}
+
+.below-nav {
+    z-index: 2;
+    position: relative;
+    padding-top:65px;
+    padding-bottom:50px;
+}
+
+.header__project-abs {
+    position: absolute;
+    top:100px;
+}
+
+.header__quick {
+    position: absolute;
+    bottom:30px;
+    color:white;
+    line-height: 20px;
+    padding-left:15px;
+}
+
+.project__content {
+    padding-top:20px;
+}
+
+.project__para p {
+    padding-bottom:1em;
+}
+
+.project__content .row {
+    padding-bottom:3em;
+}
+
+.accent--nexpo {
+    background-color:$nexpo;
+}
+
+.accent--masshike {
+    background-color:$masshike;
+}
+
+.accent--norwich {
+    background-color: $norwich;
+}
+
+.accent--national {
+    background-color: $national
+}
+
+.accent--tastemakers {
+    background-color: $tastemakers;
+}
+
+.accent--digital {
+    background-color: $digital;
+    margin-bottom:60px;
+}
+
+.accent--parks {
+    background-color: $national;
+}
+
+.image__caption {
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+    p {
+        font-size:14px;
+        line-height:18px;
+        color: $grey;
+    }
+}
+
+.accent {
+    .row {
+        padding-top:30px;
+        padding-bottom:30px;
+
+        img {
+            align-self: center;
+
+            &:nth-child(4), &:nth-child(5) {
+                padding-top:30px;
+            }
+        }
+    }    
+}
+
+.accent--base img{
+    align-self: baseline !important; 
+    object-fit: cover;
+}
+
+.project__content > .column {
+     > .row {
+         img {
+            padding-top:20px;
+         }
+
+    }
+}
+
+@media only screen and (max-width: 39.9375em) {
+    .header__project {
+        font-size:36px;
+        line-height:42px;
+    }
+
+    .header__project-abs {
+        top:10px;
+    }
+
+    .header__back,
+    .header {
+        height:520px;
+    }
+
+    header > div {
+        padding:0px 20px !important;
+    }
+
+    .accent > .row > img {
+        &:not(:last-child) {
+            margin-bottom:10px;
+        }
+    }
+
+    .header__quick > div{
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .header__project-abs {
+        top:20px;
+    }   
+
+    .header__quick > div{
+        margin-bottom:20px;
+    }
+
+    .header__project {
+        font-size:64px;
+        line-height:72px;
+    }
+}
+
+img {
+    max-width: 100%;
+  }
+  
+// Simple Lightbox
+.lightbox-opened {
+    background-color: #333;
+    background-color: rgba(#333, 0.9);
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    padding: 24px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index:9999;
+    display: flex;
+    justify-content: center;
+    
+    &:before {
+        content: url("x_white.png");
+        position: fixed;
+        filter: drop-shadow(0px 0px 4px rgba(0,0,0,.8));
+        top: 20px;
+        right: 20px;
+        padding: 6px 15px;
+        z-index: 9999999;
+    }
+    
+    img {
+        box-shadow: 0 0 6px 3px #333;
+        align-self: center;
+        position: absolute;
+        // top: 0;
+        // margin-top: 5vh;
+        max-width: 90vw;
+        margin-bottom: 5vh;
+    }
+  }
+    
+  .no-scroll {
+    overflow: hidden;
+  }
+

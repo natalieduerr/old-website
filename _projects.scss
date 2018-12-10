@@ -1,0 +1,137 @@
+.content {
+    z-index: 2;
+    position: relative;
+    padding-top:100px;
+}
+
+%set-bg-img {
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.project-box {
+    @extend %set-bg-img;
+    width:100%;
+    background-color: #F2F2F2;
+    @include transition(.5s);
+    height: 400px;
+}
+
+.project-container{
+    position: relative;
+    height: 400px;
+}
+
+.project-container:hover .project-box,
+.project-container:focus .project-box,{
+    background-position: 120% 50%;
+}
+
+.project-container:hover .project-kind,
+.project-container:hover .project-name, 
+.project-container:focus .project-kind,
+.project-container:focus .project-name {
+    opacity: 1;
+    left:30px;
+}
+
+%project-info {
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    left: -20px;
+    opacity: 0;
+    @include transition(.5s);
+}
+
+.project-name {
+    @extend %din-bold;
+    @extend %project-info;
+    font-size: 24px;
+    color: $black;
+}
+
+.project-kind {
+    @extend %din-reg;
+    @extend %project-info;
+    font-size: 16px;
+    bottom: 20px;
+    color: $black;
+}
+
+#masshike {
+    background-image:url('project_images/masshike.svg'); background-size:65%;
+    background-color: $masshike;
+}
+
+#norwich {
+    background-image:url('project_images/norwich.svg'); background-color: $norwich;
+    background-size: 60%; 
+}
+
+#nexpo {
+    background-image:url('project_images/nexpo.svg'); background-color:$nexpo; 
+    background-size: 55%;
+}
+
+#national {
+    background-image:url('project_images/park.png'); background-size:60%;
+    background-color: $national;
+}
+
+#tastemakers {
+    background-image:url('project_images/tastemakers.png'); background-color: $tastemakers;
+    background-size: 70%;
+}
+
+#digital {
+    background-image:url('project_images/poster.png'); background-color: $digital;
+    background-size: 75%;
+}
+
+@media only screen and (max-width: 63.9375em) {
+    .project-name, .project-kind {
+        opacity: 1;
+        left:30px;
+    }
+
+    .project-container:hover .project-box,
+    .project-container:focus .project-box {
+        background-position: 50% 50%;
+    }
+
+    .project-container {
+        height:400px;
+        margin:4% 0%;
+    }
+}
+
+.animation-element {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.bounce-up .subject {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .bounce-up.in-view .subject {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
