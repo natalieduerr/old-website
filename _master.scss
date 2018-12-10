@@ -31,6 +31,16 @@ $digital: #94cbda;
             border-radius: $radius;
 }  
 
+@mixin user-select($state) {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Chrome and Opera */
+    
+}   
+
 @import url("https://use.typekit.net/eqk0llf.css");
 
 // fonts

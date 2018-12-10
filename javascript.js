@@ -70,11 +70,11 @@ $(document).ready(function () {
             $('body').append('<div class="lightbox-opened"><img src="' + image + '"></div>');
             if ($(".lightbox-opened img").height() > $(".lightbox-opened").height() ) {
                 $(".lightbox-opened img").css("top", "0");
-                $(".lightbox-opened img").css("margin-top", "5vh");
+                $(".lightbox-opened img").css("margin-top", "5%");
             }
             else {
                 $(".lightbox-opened img").css("top", "auto");
-                $(".lightbox-opened img").css("margin-top", "0vh"); 
+                $(".lightbox-opened img").css("margin-top", "0"); 
             }
         });
     

@@ -101,8 +101,14 @@
     margin-top: 55vh;
     display: none;
     z-index: 999;
-    position: relative;
     pointer-events:none;
+    @include user-select(none);
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .back {
