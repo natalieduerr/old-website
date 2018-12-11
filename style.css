@@ -486,7 +486,7 @@ h4, .h4 {
   background-color: #F2F2F2;
 }
 
-#norwich {
+#resources {
   background-image: url("project_images/norwich.svg");
   background-color: #92F09C;
   background-size: 60%;
@@ -570,7 +570,7 @@ h4, .h4 {
   background-color: #4B804F;
 }
 
-#norwich-page {
+#resources-page {
   background-color: #8e001c;
 }
 
@@ -660,7 +660,7 @@ h4, .h4 {
   background-color: #F2F2F2;
 }
 
-.accent--norwich {
+.accent--resources {
   background-color: #92F09C;
 }
 
