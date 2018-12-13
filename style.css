@@ -449,24 +449,12 @@ h4, .h4 {
   background-position: 120% 50%;
 }
 
-.project-container:hover .project-kind,
-.project-container:hover .project-name,
-.project-container:focus .project-kind,
-.project-container:focus .project-name {
-  opacity: 1;
-  left: 30px;
-}
-
 .project-kind, .project-name {
   position: absolute;
   z-index: 3;
   bottom: 40px;
-  left: -20px;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  opacity: 1;
+  left: 30px;
 }
 
 .project-name {
@@ -517,11 +505,6 @@ h4, .h4 {
 }
 
 @media only screen and (max-width: 63.9375em) {
-  .project-name, .project-kind {
-    opacity: 1;
-    left: 30px;
-  }
-
   .project-container:hover .project-box,
 .project-container:focus .project-box {
     background-position: 50% 50%;
