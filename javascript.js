@@ -68,7 +68,7 @@ $(document).ready(function () {
             var image = $(this).attr('src');
             $('html').addClass('no-scroll');
             $('body').append('<div class="lightbox-opened"><img src="' + image + '"></div>');
-            if ($(".lightbox-opened img").height() > $(".lightbox-opened").height() ) {
+            if ($(".lightbox-opened img").height() > $(window).height() ) {
                 $(".lightbox-opened img").css("top", "0");
                 $(".lightbox-opened img").css("margin-top", "5%");
             }
