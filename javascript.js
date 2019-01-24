@@ -67,6 +67,7 @@ $(document).ready(function () {
             $('body').append('<div class="lightbox-opened"><img src="' + image + '"></div>');
             // if the image height is greater than the window, place image so that the user can scroll to see the whole thing
             if ($(".lightbox-opened img").height() > $(window).height()) {
+                console.log("image tall");
                 $(".lightbox-opened img").css("top", "0");
                 $(".lightbox-opened img").css("margin-top", "5%");
             }
