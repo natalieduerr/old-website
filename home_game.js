@@ -32,15 +32,15 @@ $(document).ready(function() {
     }
     // end game 
     // - move the home content back on screen
-    // - hide the instructions
-    // - hide the view button
+    // - disappear the instructions
+    // - disappear the view button
     // - disappear the circle that follows the mouse
     // - disappear the instructions
     // - switch the state to view
     function endGame() {
         $('.home').css({'margin-top': '0px'});
-        hide('.instructions');
-        hide('.view-button');
+        disappear('.instructions');
+        disappear('.view-button');
         disappear('.follow-circle');
         disappear('.instructions');
         state = "view";
@@ -82,9 +82,9 @@ $(document).ready(function() {
     }
 
     //given an element, makes the opacity 0
-    function hide(element) {
-        $(element).css({'opacity': '0'});
-    }
+    // function hide(element) {
+    //     $(element).css({'opacity': '0'});
+    // }
 
     // given an element, make the display none
     function disappear(element){
