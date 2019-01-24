@@ -40,7 +40,7 @@ $(document).ready(function() {
     function endGame() {
         $('.home').css({'margin-top': '0px'});
         disappear('.instructions');
-        disappear('.view-button');
+        hidden('.view-button');
         disappear('.follow-circle');
         disappear('.instructions');
         state = "view";
@@ -78,13 +78,13 @@ $(document).ready(function() {
         // make the circles go away, brings the instructions up,
         // and changes the button content to be View
         $('.instructions').css({'opacity': '1', 'display': 'inherit'});
-        $('.view-button').css({'opacity':'1', 'transition': '.4s'})
+        $('.view-button').css({'opacity':'1', 'transition': '.4s'});
     }
 
     //given an element, makes the opacity 0
-    // function hide(element) {
-    //     $(element).css({'opacity': '0'});
-    // }
+    function hide(element) {
+        $(element).css({'opacity': '0'});
+    }
 
     // given an element, make the display none
     function disappear(element){
@@ -158,6 +158,13 @@ $(document).ready(function() {
             if (keyCode == 80) {
                 letsDraw();
             }
+
+            // if (event.keyCode == 13) {
+            //     if (".view-button:focus") {
+            //         $(".view-button").click();
+            //         console.log("Button clicked!")
+            //     }
+            // }
         }
 
         //changes the follow-circle's width and height
