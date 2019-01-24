@@ -40,7 +40,7 @@ $(document).ready(function() {
     function endGame() {
         $('.home').css({'margin-top': '0px'});
         disappear('.instructions');
-        hidden('.view-button');
+        hide('.view-button');
         disappear('.follow-circle');
         disappear('.instructions');
         state = "view";
