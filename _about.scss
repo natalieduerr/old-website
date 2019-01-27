@@ -81,3 +81,17 @@
     opacity: 1;
 }
 
+.button-resume {
+    background-color:$text;
+    color:$white;
+    padding:15px 30px;
+    @extend %din-bold;
+    margin-top: 20px;
+    display: inline-block;
+    @include transition(.2s);
+}
+
+.button-resume:hover, .button-resume:focus {
+    background-color: #833C3C;
+}
+

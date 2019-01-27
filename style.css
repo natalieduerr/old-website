@@ -23,7 +23,7 @@
   font-weight: 400;
 }
 
-.din-bold, .project-name, .resume__h3, h2, .h2 {
+.din-bold, .project-name, .button-resume, .resume__h3, h2, .h2 {
   font-family: din-2014, sans-serif;
   font-weight: 700;
 }
@@ -269,6 +269,22 @@ h4, .h4 {
   animation: fadeRightIn ease-in 1;
   animation-duration: 1s;
   opacity: 1;
+}
+
+.button-resume {
+  background-color: #B23838;
+  color: #ffffff;
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-resume:hover, .button-resume:focus {
+  background-color: #833C3C;
 }
 
 .view-button, .nav__links--current, .nav__links--not {
