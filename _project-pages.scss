@@ -155,9 +155,39 @@
          img {
             padding-top:20px;
          }
-
     }
 }
+
+.more__title {
+    @extend %din-bold;
+    font-size: 18px;
+    color: $text;
+}
+
+.more__prev, .more__next {
+    padding:30px 0px; 
+    > p {
+        @extend %din-reg;
+        font-size: 18px;
+        color: $text;
+    }
+    
+    > a {
+        @extend %din-bold;
+        font-size:40px;
+        color: $link;
+        @extend %line-hover; 
+        
+        &::before {
+            background-color: $background;
+        }
+    }
+}
+
+.more__next .more__title{
+    text-align: right;
+}
+
 
 @media only screen and (max-width: 39.9375em) {
     .header__project {
