@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/eqk0llf.css");
-.ref-bold, .initials a, .initials, .resume__h2, h1, .h1 {
+.ref-bold, .resume__h2, .initials a, .initials, h1, .h1 {
   font-family: refrigerator-deluxe, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -193,101 +193,7 @@ h4, .h4 {
     transform: translateX(0px);
   }
 }
-.group {
-  padding-bottom: 30px;
-}
-
-.photos-padding {
-  padding-top: 12%;
-}
-
-.small {
-  line-height: 0.8;
-}
-
-.small-resume {
-  margin-top: 100px;
-  padding-bottom: 50px;
-}
-
-.resume__h2 {
-  font-size: 36px;
-  padding-bottom: 0px;
-}
-
-.resume__h3 {
-  font-size: 24px;
-  line-height: 30px;
-  padding-bottom: 0;
-}
-
-.small {
-  display: block;
-  content: "";
-  margin-top: 10px;
-}
-
-.container {
-  padding-top: 180px;
-}
-
-.small-resume .column {
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 63.9375em) {
-  .container {
-    padding-top: 120px;
-  }
-  .container .row .column p {
-    margin-top: 30px;
-  }
-
-  .small-resume {
-    margin-top: 40px;
-  }
-}
-.down {
-  animation: fadeDownIn ease-in 1;
-  animation-duration: 1s;
-  opacity: 1;
-}
-
-.up {
-  animation: fadeUpIn ease-in 1;
-  animation-duration: 1s;
-  opacity: 1;
-}
-
-.left {
-  animation: fadeLeftIn ease-in 1;
-  animation-duration: 1s;
-  opacity: 1;
-}
-
-.right {
-  animation: fadeRightIn ease-in 1;
-  animation-duration: 1s;
-  opacity: 1;
-}
-
-.button-resume {
-  background-color: #B23838;
-  color: #ffffff;
-  padding: 15px 30px;
-  margin-top: 20px;
-  display: inline-block;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.button-resume:hover, .button-resume:focus {
-  background-color: #833C3C;
-}
-
-.view-button, .nav__links--current, .nav__links--not {
+.view-button, .resume__h3 a, .nav__links--current, .nav__links--not {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -298,7 +204,7 @@ h4, .h4 {
   transition-duration: 0.4s;
 }
 
-.view-button:before, .nav__links--not:before {
+.view-button:before, .resume__h3 a:before, .nav__links--not:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -434,6 +340,148 @@ h4, .h4 {
     display: none;
   }
 }
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 9999999;
+}
+
+.group {
+  padding-bottom: 30px;
+}
+
+.photos-padding {
+  padding-top: 12%;
+}
+
+.small {
+  line-height: 0.8;
+}
+
+.small-resume {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.resume__h2 {
+  font-size: 36px;
+  padding-bottom: 0px;
+}
+
+.resume__h3 {
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 0;
+}
+
+.small {
+  display: block;
+  content: "";
+  margin-top: 10px;
+}
+
+.container {
+  padding-top: 180px;
+}
+
+.small-resume .column {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .container {
+    padding-top: 120px;
+  }
+  .container .row .column p {
+    margin-top: 30px;
+  }
+
+  .small-resume {
+    margin-top: 40px;
+  }
+}
+.down {
+  animation: fadeDownIn ease-in 1;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.up {
+  animation: fadeUpIn ease-in 1;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.left {
+  animation: fadeLeftIn ease-in 1;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.right {
+  animation: fadeRightIn ease-in 1;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.button-resume {
+  background-color: #B23838;
+  color: #ffffff;
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-style: inherit;
+}
+
+.button-resume:hover, .button-resume:focus {
+  background-color: #833C3C;
+}
+
+.resume__h3 a {
+  color: #B23838;
+  text-decoration: underline;
+}
+
+.resume__h3 a:before {
+  background-color: #B23838;
+}
+
+.resume__h3 a:focus,
+.resume__h3 a:hover {
+  color: #ffffff;
+}
+
+.resume__h3 a:focus:before,
+.resume__h3 a:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .content {
   z-index: 2;
   position: relative;

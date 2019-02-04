@@ -89,9 +89,31 @@
     margin-top: 20px;
     display: inline-block;
     @include transition(.2s);
+    font-style:inherit;
 }
 
 .button-resume:hover, .button-resume:focus {
     background-color: #833C3C;
 }
 
+.resume__h3 a {
+    @extend %effect;
+    color: $text;
+    text-decoration: underline;
+}
+
+.resume__h3 a:before {
+    @extend %before-effect;
+    background-color:$text; 
+}
+
+.resume__h3 a:focus,
+.resume__h3 a:hover{
+    color: $white;
+}
+
+.resume__h3 a:focus:before,
+.resume__h3 a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
