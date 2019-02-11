@@ -1016,7 +1016,7 @@ img {
   padding: 0;
 }
 
-footer {
+.connect {
   position: relative;
   background-color: #27675E;
   color: #ffffff;
@@ -1025,13 +1025,13 @@ footer {
   font-size: 14px;
   margin-top: 40px;
 }
-footer a, footer i {
+.connect a, .connect i {
   color: #ffffff;
 }
-footer a span, footer i span {
+.connect a span, .connect i span {
   text-decoration: underline;
 }
-footer a span:hover, footer a span:focus, footer i span:hover, footer i span:focus {
+.connect a span:hover, .connect a span:focus, .connect i span:hover, .connect i span:focus {
   font-style: italic;
 }
 
