@@ -96,6 +96,7 @@ $(document).ready(function() {
         $( "<div class = 'new-circles'" + whereTo() + "></div>" ).appendTo( '.back' );
     }
 
+    // places circle at the given xVal and yVal by updating the CSS for .follow-circle
     function placeCircle(xVal, yVal) {
         $('.follow-circle').css({
             left:xVal,
@@ -158,13 +159,6 @@ $(document).ready(function() {
             if (keyCode == 80) {
                 letsDraw();
             }
-
-            // if (event.keyCode == 13) {
-            //     if (".view-button:focus") {
-            //         $(".view-button").click();
-            //         console.log("Button clicked!")
-            //     }
-            // }
         }
 
         //changes the follow-circle's width and height

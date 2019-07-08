@@ -26,6 +26,7 @@
     font-size: 24px;
     line-height: 30px;
     padding-bottom:0;
+    color:$black;
 }
 
 .small {
@@ -98,13 +99,12 @@
 
 .resume__h3 a {
     @extend %effect;
-    color: $text;
-    text-decoration: underline;
+    color: $link;
 }
 
 .resume__h3 a:before {
     @extend %before-effect;
-    background-color:$text; 
+    background-color:$link; 
 }
 
 .resume__h3 a:focus,
