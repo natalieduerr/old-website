@@ -112,8 +112,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  color: #B23838;
-  font-size: 20px;
+  color: #000000;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -393,6 +393,7 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 24px;
   line-height: 30px;
   padding-bottom: 0;
+  color: #000000;
 }
 
 .small {
@@ -463,12 +464,11 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .resume__h3 a {
-  color: #B23838;
-  text-decoration: underline;
+  color: #27675E;
 }
 
 .resume__h3 a:before {
-  background-color: #B23838;
+  background-color: #27675E;
 }
 
 .resume__h3 a:focus,
