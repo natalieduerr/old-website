@@ -1,3 +1,6 @@
+// TODO
+// make letters not bold, regular
+
 @import 'master';
 @import 'nav';
 @import 'about';
@@ -24,8 +27,30 @@
     display: inherit;
 }
 
+.full-name {
+    @media only screen and (min-width: $min-tablet) {
+        display:none;
+    }
+}
+
+.name-letters {
+    border-bottom: solid 1px $text;
+    margin-bottom: 30px;
+    width: 620px;
+}
+
+.name-letter-style {
+    @media only screen and (min-width: $min-tablet) {
+        display: inline-block;
+        transform: skew(-12deg);
+        text-transform: uppercase;
+        padding-right: 24px;
+        @include transition(.2s);
+    }
+}
+
 .stylelinks {
-    padding-top:40px;
+    //padding-top:40px;
     font-size:32px;
     z-index:2;
     a {

@@ -18,7 +18,6 @@ $(document).ready(function() {
     // captures initial height of the screen
     const screenHeight = $(document).height();
 
-
     // start game
     // - move the home content up and away
     // - bring up the instructions and view button
@@ -167,5 +166,5 @@ $(document).ready(function() {
             height: size
         });
       });
-        
+      
 });

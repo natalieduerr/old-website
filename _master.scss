@@ -1,3 +1,7 @@
+// TODO
+// add in min and max device sizes
+// rename colors so they make more sense
+
 //colors 
 $background:#D3E7E4;
 $background80: rgba(211,231,228,.9);
@@ -15,6 +19,10 @@ $nexpo: #F4D897;
 $national: rgb(240, 146, 146);
 $tastemakers: #f48f6f;
 $digital: #94cbda;
+
+//min screen sizes
+$min-desktop: 1024px;
+$min-tablet: 768px;
 
 //mix-ins
 @mixin transition($transition) {
