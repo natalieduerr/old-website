@@ -21,9 +21,9 @@ $(document).ready(function() {
     $('.name-letter-style').hover(
         function() {
             console.log("hovering");
-          $( this ).css('transform', 'rotate(30deg)');
+          $( this ).css('transform', 'skew(-12deg) rotate(20deg)');
         }, function() {
-          $( this ).css('transform', 'rotate(0deg)');
+          $( this ).css('transform', 'skew(-12deg) rotate(0deg)');
         }
       );
 });
