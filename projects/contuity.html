@@ -57,11 +57,11 @@
         </div>
     </nav>
     <div class="below-nav" id ="main-content">
-        <div id="masshike-page" class="row full-width header__back">
+        <div id="contuity-page" class="row full-width header__back">
         </div>
         <header class="row header" role = "banner">
             <div class="column small-12">
-                <h1 class="header__project header__project-abs">Defining an intuitive experience that allows users to seamlessly manage their connections</h1>
+                <h1 class="header__project header__project-abs">Defining an intuitive experience that allows users to mindfully manage their connections</h1>
             </div>
             <div class="row full-width header__quick">
                 <div class="column small-6 large-3">
@@ -69,6 +69,7 @@
                     <br>
                     <span>research</span><br>
                     <span>ux design</span><br>
+                    <span>front-end development</span><br>
                 </div>
                 <div class="small-6 large-3 column">
                     <span><b>role</b></span>
@@ -96,7 +97,7 @@
                         about
                     </h2>
                     <div class="column small-12 medium-10 project__para">
-                        <p> My third client with Scout was Contuity, a note taking tool that focuses on helping people stay connected. The app is designed for people who have a lot of relationships to keep track of and want to prevent people from slipping through the cracks. Unlike other apps already on the market, Contuity aims to be supportive, encouraging, and balancing. Contuity understands how busy its users are and works to alleviate pressure so the user feels in control.
+                        <p> My third client with Scout was Contuity, a note taking tool that focuses on helping people stay connected. The app is designed for people who have a lot of relationships to keep track of and want to prevent people from slipping through the cracks. Unlike other apps already on the market, Contuity aims to be supportive, encouraging, and mindful. Contuity knows how busy its users are and wants to alleviate the pressure so that the user feels in control.
                         <br>
                             <!--UPDATE LINK-->
                             <a class = "button-resume" target = "_blank" aria-label ="link to mass hike's website opens in new tab"  tabindex = "0" href = "https://masshike.org">View Figma Project</a>
@@ -112,39 +113,24 @@
                         discovery
                     </h2>
                     <div class="column small-12 medium-10 project__para">
-                        <p> The first step in the process was understanding what Contuity was and wasn't and how that compares to what already exists.
-                            
-                            Before we could dive into wireframes and designs, we first needed to understand who their
-                            users were. Our team created a survey which was shared with Mass Hike’s email list. This
-                            survey confirmed what the Mass Hike team shared with us, many of their customers were
-                            working professionals who lacked transportation to nature and members of low-income
-                            communities who, due to financial constraints, struggle to make it out into nature. As a
-                            team of college students, we felt that we had a grasp of the user needs and goals
-                            of young professionals, so we decided to focus the rest of our research on lower income
-                            community members.</p>
-                        <p>
-                            Mass Hike was able to share several contacts with us, one of which helped organize events
-                            in low-income housing developments and loved Mass Hike’s goal. I was able to set up a phone
-                            call and talk to her about how we could best design for the low-income community. The most
-                            important questions were…
+                        <p> The first step in the process was understanding what Contuity was and wasn't and how that compares to what already exists. Our client was very passionate and had many ideas of different features that we could incorporate. With this information we conducted two different styles of interviews. One focused on how people who are extremely busy currently keep track of all their connections and things they need to get done. The second focused more on features and what people thought was the most important for keeping them organized.</p>
+                        <p> Two of my team members were also interested in learning about user research. We were able to collaborate on questions and the strategy, which led to us creating a user test plan. Each of us followed this plan and conducted three interviews each with people involved in multiple organizations, working several jobs, or just a generally busy person. This gave us a wealth of information. Below is an example of the results from the sorting exercise and some examples of questions we asked.
                         </p>
+                        <img class = "column small-12" src = "contuity/sorting_1.png" alt ="An image showing the results of a sorting exercise. Several features were ranked from most important to least important to give our team direction on what features to focus on.">
                         <ul>
-                            <li>What type of technology do you see members of your community using? How often do they
-                                use different forms of technology?</li>
-                            <li>What is the best way to contact members of your community?</li>
-                            <li>How do members of your community prefer to pay for things online? How common is it to
-                                not have a credit card or bank account?</li>
+                            <li>When you have made a new connection who you are interested in working with, how did you propel your relationships forward? What mechanisms or tools helped you do this?</li>
+                            <li>Are your tasks people oriented or for yourself?</li>
+                            <li>Would you feel comfortable showing me your to-do list/life management system? If so, can you walk me through it?</li>
                         </ul>
                         <p>
-                            Through this interview, I was able to gather valuable insight. We learned that a lot of
-                            people are using public computers to access the internet and many use non-smart phones on a
-                            day to day basis. This showed us that we really needed to focus on the desktop experience,
-                            as opposed to mobile, as one of the main target audience was primarily using computers. I
-                            also discovered that people prefer paying in cash if possible
-                            and that there are many community members who do not have a bank account or credit card.
-                            This information led to a large UX problem, how can we allow for customers to pay in cash
-                            on an online booking platform?
+                            Through these interviews we were able to gain insight into the hectic lives of different people. These user interviews led to the creation of personas. We narrowed our users down to four main types of people...</p>
                         </p>
+                        <ol>
+                            <li><b>Young entreprenuer with a full time marketing job.</b> This person is actively networking inside and outside of the office and is constantly meeting new people. They need a way to remember everyone and keep track of their own thoughts. They use LinkedIn to connect with other professionals, as well as Slack and Outlook to communicate with co-workers. To manage their personal life, they use Google products.</li>
+                            <li><b>Working professional who travel frequently for work.</b> They are building new relationships all the time, with people from all over the world. They need to organize meetings within a tight schedule and maintain steady client relationships and communications. They are comfortable on the computer, but also keep a notebook of important information to remember.</li>
+                            <li><b>Highly motivated and busy college student.</b> They need to keep up with rigorous course work and coordinate events for the student organization they are a part of. They have to balance work and social life and use Google and Apple products to do so. They are active on social media and use that as a way to connect to people.</li>
+                            <li><b>A high involved community member and stay-at home parent.</b>They have to stay on top of the household chores, as well as keep track of their children's events like sports, music lessons, and PT events. They coordinate events for a local volunteer group and need a way to keep in touch with members. They constantly have their hands full and need a quick way to jot things down. </li>
+                        </ol>
                     </div>
                 </div>
             </div>
