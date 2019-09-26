@@ -1,0 +1,68 @@
+@import url("https://use.typekit.net/eqk0llf.css");
+
+* {
+    margin: 0;
+    font-family: din-2014, sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p, span {
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+}
+
+body, 
+.letter > *,
+.website p {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg");
+}
+
+main {
+    /* position: absolute; */
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+p, span {
+    font-size: 2rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+.address h1 {
+    padding-right: 2rem;
+}
+
+.address h1, .people h2 {
+    font-size: 2.5rem;
+}
+
+.letter, .website {
+    max-width: 700px;
+    position: absolute;
+}
+
+.letter > *, .website p {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
