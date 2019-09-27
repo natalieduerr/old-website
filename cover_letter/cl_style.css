@@ -17,15 +17,15 @@ body {
     position: relative;
 }
 
-body, 
+/* body, 
 .letter > *,
 .website p {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg");
-}
+    background-image: linear-gradient(to bottom right, rgba(29,161,242,1.00), rgb(121, 75, 196));;
+} */
 
 main {
     /* position: absolute; */
-    background: white;
+    background: rgb(21, 32, 43);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -39,30 +39,78 @@ p {
 }
 
 p, span {
-    font-size: 2rem;
+    font-size: 1.25rem;
+}
+
+a {
+    color: rgb(255, 173, 31);
+}
+
+
+.letter {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.letter > div {
+    padding: 0 1rem ;
+}
+
+.content {
+    color:rgba(29,161,242,1.00);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.content {
+    max-width: 700px;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    width: 34%;
 }
 
 .address {
+    text-align: right;
+    width: 50%;
+    position: sticky;
     display: flex;
-    flex-direction: row;
-    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .address h1 {
-    padding-right: 2rem;
+    font-size: 8rem;
+    line-height: .9;
+    color: rgb(224, 36, 94);
+    -webkit-text-fill-color: rgb(224, 36, 94);
 }
 
-.address h1, .people h2 {
-    font-size: 2.5rem;
+.address h2 {
+    padding-top:2rem;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
 }
 
-.letter, .website {
-    max-width: 700px;
-    position: absolute;
+.address h3 {
+    color: #ffffff;
 }
 
-.letter > *, .website p {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.address h3 {
+    font-weight: 400;
 }
+
+.address h3 a {
+    font-weight: 700;
+}
+
+::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
 
