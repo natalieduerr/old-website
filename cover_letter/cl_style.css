@@ -1,0 +1,211 @@
+@import url("https://use.typekit.net/eqk0llf.css");
+
+* {
+    margin: 0;
+    font-family: din-2014, sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p, span {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+body {
+    position: relative;
+    background: rgb(21, 32, 43);
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+p, span {
+    font-size: 1.25rem;
+}
+
+a {
+    color: rgb(255, 173, 31);
+    transition: .4s;
+}
+
+a:hover, a:focus {
+    color: rgb(23, 191, 99);
+}
+
+.letter {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: space-around;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.letter>div {
+    padding: 0 5%;
+}
+
+.content {
+    color: rgba(29, 161, 242, 1.00);
+    height: 100%;
+    max-width: 700px;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    width: 90%;
+}
+
+.content h3 {
+    padding-top: 2rem;
+    display: block;
+    color: #ffffff;
+}
+
+.address {
+    text-align: left;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address h1 {
+    font-size: 4.5rem;
+    line-height: .9;
+    color: rgb(224, 36, 94);
+    -webkit-text-fill-color: rgb(224, 36, 94);
+}
+
+.address h2 {
+    padding-top: 1rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+}
+
+.address h3 {
+    display: none;
+    color: #ffffff;
+}
+
+.address h3 {
+    font-weight: 400;
+}
+
+.address h3 a {
+    font-weight: 700;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid rgb(121, 75, 196);
+    background-color: rgb(21, 32, 43);
+}
+
+@media only screen and (min-width: 768px) {
+    .address h1 {
+        font-size: 5rem;
+    }
+
+    .address h2 {
+        font-size: 3rem;
+    }
+
+    .letter {
+        margin: 4rem 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        height: 100vh;
+    }
+
+    p:first-child {
+        margin-top: 0rem;
+    }
+
+    .address h2 {
+        padding-top: 2rem;
+    }
+
+    .address h3 {
+        display: block;
+    }
+
+    .address {
+        text-align: right;
+    }
+
+    .letter {
+        position: absolute;
+        display: flex;
+        height: 90vh;
+    }
+
+    .address {
+        width: 50%;
+    } 
+
+    .content {
+       width: 34%;
+    }
+    
+    .letter {
+        flex-direction: row;
+        margin: 0;
+
+    }
+
+    .letter>div {
+        padding: 0 1rem;
+    }
+
+    .content {
+        overflow-y: scroll;
+    }
+
+    .content h3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .address h1 {
+        font-size: 8rem;
+    }
+
+    .address h2 {
+        font-size: 5rem;
+    }
+}
