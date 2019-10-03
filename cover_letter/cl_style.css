@@ -110,8 +110,26 @@ a:hover, a:focus {
     font-weight: 700;
 }
 
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
 ::-webkit-scrollbar-track {
     background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid rgb(121, 75, 196);
+    background-color: rgb(21, 32, 43);
 }
 
 @media only screen and (min-width: 768px) {
@@ -131,6 +149,10 @@ a:hover, a:focus {
 @media only screen and (min-width: 1024px) {
     main {
         height: 100vh;
+    }
+
+    p:first-child {
+        margin-top: 0rem;
     }
 
     .address h2 {
