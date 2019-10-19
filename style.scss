@@ -22,21 +22,36 @@
 
 .home {
     position: relative;
-    padding:150px 0px;
+    padding: 100px 0px;
     @include transition(.4s);
     display: inherit;
 }
 
+.home > .center {
+    justify-content: center;
+}
+
 .full-name {
+    text-transform: uppercase;
+    font-family: refrigerator-deluxe, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 8px;
+
     @media only screen and (min-width: $min-tablet) {
-        display:none;
+        display: none;
     }
 }
 
 .name-letters {
+    display: none;
     border-bottom: solid 1px $text;
     margin-bottom: 30px;
     width: 620px;
+
+    @media only screen and (min-width: $min-tablet) {
+        display: block;
+    }
 }
 
 .name-letter-style {
@@ -51,25 +66,24 @@
 }
 
 .stylelinks {
-    //padding-top:40px;
-    font-size:32px;
-    z-index:2;
+    font-size: 32px;
+    z-index: 2;
+
     a {
         @extend %din-italic;
         color: $link;
-        margin-right:40px;
+        margin-right: 40px;
         @extend %line-hover;
     }
 
     &:first-child{
         padding-left:0px;
-        // margin-left:15px;
     }
 
     & > .column {
-        padding-left:0px;
-        padding-right:0px;
-        margin-left:15px !important;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 15px !important;
     }
 }
 
@@ -86,7 +100,6 @@
     padding:15px 30px;
     border-radius:0px;
     opacity: 0;
-    // display: none;
     a {
        color: $white;
     }
@@ -111,18 +124,18 @@
     @include border-radius(50%);
     @include transition(1s);
     background-color: $circle;
-    width:45vw;
-    height:45vw;
+    width: 45vw;
+    height: 45vw;
     opacity: .5;
-    z-index:-2;
+    z-index: -2;
     position: absolute;
 }
 
 .follow-circle,
 .new-circles {
     @extend %circle;
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     bottom: 10px;
     right: 10px;
 }
@@ -206,8 +219,8 @@ $dot-space: 22px;
 .stylelinks li {
     display: inline;
     text-decoration: none;
-    margin-top:0;
-    margin-bottom:0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .stylelinks li a {
@@ -216,19 +229,18 @@ $dot-space: 22px;
 
 @media only screen and (max-width: 40em) {
     .home {
-        padding:80px 0px;
+        padding: 80px 0px;
     }
 
     .stylelinks {
-        padding-top:20px;
+        padding-top: 20px;
     }
 
     .stylelinks > a {
         margin-bottom: 30px;
     }
 
-    footer {
-        
+    footer {   
         & span {
             padding-bottom:10px;
         }

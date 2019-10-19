@@ -7,7 +7,6 @@ $(document).ready(function() {
     var name = document.querySelector('h1');
     var nameString = name.innerHTML;
     var nameStringArray = nameString.split('');
-    console.log(nameStringArray);
 
     for(i=0; i < nameStringArray.length; i++) {
         var letter = nameStringArray[i];
