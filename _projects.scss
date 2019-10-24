@@ -51,33 +51,43 @@
 }
 
 #masshike {
-    background-image:url('project_images/masshike.svg'); background-size:65%;
+    background-image:url('project_images/masshike.svg');
+    background-size:65%;
     background-color: $masshike;
 }
 
+#contuity {
+    background-image:url('project_images/contuity.png'); 
+    background-size:55%;
+    background-color: $contuity;
+}
+
 #resources {
-    background-image:url('project_images/resources.svg'); background-color: $resources;
+    background-image:url('project_images/resources.svg');
+    background-color: $resources;
     background-size: 60%; 
 }
 
 #nexpo {
-    background-image:url('project_images/nexpo.svg'); background-color:$nexpo; 
+    background-image:url('project_images/nexpo.svg');
+    background-color:$nexpo; 
     background-size: 55%;
 }
 
 #national {
-    background-image:url('project_images/park.png'); background-size:60%;
+    background-image:url('project_images/park.png');
+    background-size:60%;
     background-color: $national;
 }
 
 #tastemakers {
-    background-image:url('project_images/tastemakers.png'); background-color: $tastemakers;
+    background-image:url('project_images/tastemakers.png'); 
+    background-color: $tastemakers;
     background-size: 70%;
 }
 
-#digital {
-    background-image:url('project_images/poster.png'); background-color: $digital;
-    background-size: 75%;
+.white {
+    color: $white;
 }
 
 @media only screen and (max-width: 63.9375em) {
@@ -94,8 +104,8 @@
 }
 
 .animation-element {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .bounce-up .subject {

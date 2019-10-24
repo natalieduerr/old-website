@@ -538,6 +538,12 @@ a.skip-main:focus, a.skip-main:active {
   background-color: #F2F2F2;
 }
 
+#contuity {
+  background-image: url("project_images/contuity.png");
+  background-size: 55%;
+  background-color: #2C3353;
+}
+
 #resources {
   background-image: url("project_images/resources.svg");
   background-color: #92F09C;
@@ -562,10 +568,8 @@ a.skip-main:focus, a.skip-main:active {
   background-size: 70%;
 }
 
-#digital {
-  background-image: url("project_images/poster.png");
-  background-color: #94cbda;
-  background-size: 75%;
+.white {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 63.9375em) {
@@ -580,8 +584,8 @@ a.skip-main:focus, a.skip-main:active {
   }
 }
 .animation-element {
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .bounce-up .subject {
@@ -711,6 +715,10 @@ a.skip-main:focus, a.skip-main:active {
   background-color: #F2F2F2;
 }
 
+.accent--contuity {
+  background-color: #2C3353;
+}
+
 .accent--resources {
   background-color: #92F09C;
 }
@@ -721,11 +729,6 @@ a.skip-main:focus, a.skip-main:active {
 
 .accent--tastemakers {
   background-color: #f48f6f;
-}
-
-.accent--digital {
-  background-color: #94cbda;
-  margin-bottom: 60px;
 }
 
 .accent--parks {
