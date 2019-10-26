@@ -5,7 +5,7 @@
   font-weight: 900;
 }
 
-.ref-reg, .header__project {
+.ref-reg, .name-letter-style, .header__project {
   font-family: refrigerator-deluxe, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -887,7 +887,7 @@ img {
 
 .home {
   position: relative;
-  padding: 150px 0px;
+  padding: 100px 0px;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -895,8 +895,49 @@ img {
   display: inherit;
 }
 
+.home > .center {
+  justify-content: center;
+}
+
+.full-name {
+  text-transform: uppercase;
+  font-family: refrigerator-deluxe, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .full-name {
+    display: none;
+  }
+}
+
+.name-letters {
+  display: none;
+  border-bottom: solid 1px #B23838;
+  margin-bottom: 30px;
+  width: 620px;
+}
+@media only screen and (min-width: 768px) {
+  .name-letters {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .name-letter-style {
+    display: inline-block;
+    transform: skew(-12deg);
+    text-transform: uppercase;
+    padding-right: 24px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+
 .stylelinks {
-  padding-top: 40px;
   font-size: 32px;
   z-index: 2;
 }
