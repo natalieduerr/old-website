@@ -47,7 +47,7 @@ a {
 }
 
 .spotify a {
-    color: #E453B6;
+    color: #FE6435;
 }
 
 a:hover, a:focus {
@@ -156,7 +156,7 @@ a:hover, a:focus {
 }
 
 .spotify ::-webkit-scrollbar-thumb {
-    border: 2px solid #E453B6;
+    border: 2px solid #FE6435;
     background-color: rgb(25, 20, 20);
 }
 
